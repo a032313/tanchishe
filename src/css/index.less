@@ -1,0 +1,69 @@
+@bgcolor:#b7d4a8;
+@maincolor:#000000;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.main{
+    width: 360px;
+    height: 420px;
+    background-color: @bgcolor;
+    border:10px solid @maincolor;
+    border-radius: 10px;
+    margin:0 auto;
+   
+}
+.up{
+    width: 304px;
+    height: 304px;
+    border:2px solid @maincolor;
+    margin: 20px auto;
+    position: relative;
+    .snake{
+        
+        .header{
+        width:10px;
+        height: 10px;
+        background-color: @maincolor;
+        position:absolute;
+        top:10px;
+        left:10px;
+        }
+      
+        
+       
+  
+    }
+    .food{
+        width: 10px;
+        height: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        position: absolute;
+        left:80px;
+        top:100px;
+       
+        
+      
+        div{
+            width: 4px;
+            height: 4px;
+            background-color: @maincolor;
+        }
+    }
+       
+    
+
+}
+.down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font:bold 20px "Courier";
+        
+    
+}
